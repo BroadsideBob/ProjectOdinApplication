@@ -1,0 +1,16 @@
+#root {
+  max-width: 1280px;
+  height: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+/* i did a little research into what rem measurements are. i'm surprised this wasn't discussed in the accessibility section of the Advanced HTML and CSS block - or if it was, i don't remember it. will keep it in mind for the future. 
+same goes for fr (or "fraction") units for making grids. very handy. */
+main {  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+  justify-content: center;
+}
